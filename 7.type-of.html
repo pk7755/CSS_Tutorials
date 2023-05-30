@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Type-of selector</title>
+     <style>
+          /* Target the type-of tag */
+
+          div span:first-of-type {
+               background-color: green;
+               font-size: 20px;
+          }
+          div p:first-of-type {
+               background-color: rgb(7, 82, 7);
+               font-size: 20px;
+          }
+
+          div span:last-of-type {
+               background-color: yellow;
+               font-size: 20px;
+          }
+
+          div p:last-of-type {
+               background-color: red;
+               font-size: 20px;
+          }
+
+          div p:nth-child(5) {
+               background-color: rgb(228, 218, 214);
+               font-size: 20px;
+          }
+
+          div p:nth-child(even) {
+               background-color: red;
+               font-size: 20px;
+          }
+
+          div p:nth-child(even) {
+               background-color: green;
+               font-size: 20px;
+          }
+     </style>
+</head>
+
+<body>
+     <div>
+          <p>1st child of p .</p>
+          <span>1st child of span.</span>
+          <p>2nd child of p.</p>
+          <p>3rd child of p.</p>
+          <span>2nd child of span.</span>
+          <p>4th child of p.</p>
+          <p>5th child of p.</p>
+          <sapn>3rd child span.</sapn>
+          <p>6th child of p.</p>
+     </div>
+</body>
+
+</html>

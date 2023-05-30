@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute Selector</title>
+    <style>
+        /* Target tag with class attribute */
+        p[class] {
+            background-color: red;
+            color: white;
+        }
+        /* Target tag with class attribute with its value */
+        p[class="pk"] {
+            background-color: aqua;
+        }
+        /* Target tag with startging class or prefix class */
+        p[class^="shubham"]{
+            background-color: blue;
+        }
+        /* Target tag with last class or postfix or sufffix class */
+        p[class$="anand"]{
+            background-color:blueviolet;
+        }
+        /* Target class which is nearby space or class seperated with space */
+        p[class~="mayur"]{
+            background-color:brown;
+        }
+        /* Target class which is nearby space or class seperated with space */
+        /* this will overwrite the upper style */
+        p[class~="ayush"]{
+            background-color:crimson;
+        }
+         /* this will search for any position or search for the contained value */
+         p[class*="tiger"]{
+            background-color:darksalmon;
+        }
+         /* this will search for any position or search for the contained value */
+         p[class*="e"]{
+            background-color:darkorchid;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="dinga">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe animi culpa in, ipsa odio tempore aspernatur cupiditate veniam dicta ducimus ex nemo commodi possimus alias voluptatem. Cum consequuntur nihil veniam!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, temporibus magnam officiis atque deleniti dolor explicabo sint corporis assumenda eos, illo nostrum veritatis cupiditate, consequatur asperiores ipsam provident numquam ut.
+    </p>
+    <p class="pk">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores veniam excepturi voluptate, debitis ducimus, alias ab hic earum voluptates tenetur officiis consequatur ad quod! Quasi quibusdam mollitia incidunt porro?
+    </p>
+    <p class="shubham patel abhishek">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores veniam excepturi voluptate, debitis ducimus, alias ab hic earum voluptates tenetur officiis consequatur ad quod! Quasi quibusdam mollitia incidunt porro?
+    </p>
+    <!-- if we add space in the last of class then it will be not target by last value of class attribute  -->
+    <p class="patel abhishek anand ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores veniam excepturi voluptate, debitis ducimus, alias ab hic earum voluptates tenetur officiis consequatur ad quod! Quasi quibusdam mollitia incidunt porro?
+    <p class="patel abhishek anand">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores veniam excepturi voluptate, debitis ducimus, alias ab hic earum voluptates tenetur officiis consequatur ad quod! Quasi quibusdam mollitia incidunt porro?
+    <p class="ayush vinay mayur shivam">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores veniam excepturi voluptate, debitis ducimus, alias ab hic earum voluptates tenetur officiis consequatur ad quod! Quasi quibusdam mollitia incidunt porro?
+    </p>
+    <p class="ayush vinay mayur shivam">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores veniam excepturi voluptate, debitis ducimus, alias ab hic earum voluptates tenetur officiis consequatur ad quod! Quasi quibusdam mollitia incidunt porro?
+    </p>
+    <p class="vinay ram tiger shivam">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores veniam excepturi voluptate, debitis ducimus, alias ab hic earum voluptates tenetur officiis consequatur ad quod! Quasi quibusdam mollitia incidunt porro?
+    </p>
+
+</body>
+
+</html>

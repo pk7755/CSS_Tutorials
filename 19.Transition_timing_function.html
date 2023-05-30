@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>19.Transition_timing_function</title>
+     <style>
+          * {
+               box-sizing: border-box;
+               padding: 0px;
+               margin: 0px;
+          }
+          .item{
+               display: inline-block;
+          }
+
+          .item1 {
+               height: 200px;
+               width: 200px;
+               padding: 20px;
+               background-color: red;
+               transition-property: all;
+               transition-duration: 2s;
+               transition-delay: 0.5s;
+               transition-timing-function: linear;
+
+          }
+
+          .item2 {
+               height: 200px;
+               width: 200px;
+               padding: 20px;
+               background-color: red;
+               transition-property: all;
+               transition-duration: 2s;
+               transition-delay: 0.5s;
+               transition-timing-function: ease;
+
+          }
+
+          .item3 {
+               height: 200px;
+               width: 200px;
+               padding: 20px;
+               background-color: red;
+               transition-property: all;
+               transition-duration: 2s;
+               transition-delay: 0.5s;
+               transition-timing-function: ease-in;
+
+          }
+
+          .item4 {
+               height: 200px;
+               width: 200px;
+               padding: 20px;
+               background-color: red;
+               transition-property: all;
+               transition-duration: 2s;
+               transition-delay: 0.5s;
+               transition-timing-function: ease-out;
+
+          }
+
+          .item5 {
+               height: 200px;
+               width: 200px;
+               padding: 20px;
+               background-color: red;
+               transition-property: all;
+               transition-duration: 2s;
+               transition-delay: 0.5s;
+               transition-timing-function: ease-in-out;
+
+          }
+
+          div:hover {
+               background-color: yellow;
+               height: 400px;
+               width: 400px;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="item item1"></div>
+     <div class="item item2"></div>
+     <div class="item item3"></div>
+     <div class="item item4"></div>
+     <div class="item item5"></div>
+</body>
+
+</html>

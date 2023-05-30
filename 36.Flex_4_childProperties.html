@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>36.Flex_4_childProperties</title>
+     <style>
+          *{
+               box-sizing: border-box;
+               padding: 0;
+               margin: 0;
+          }
+          .container{
+               background-color: red;
+               height: 300px;
+               display: flex;
+               gap: 30px;
+               justify-content: flex-start;
+          }
+          .items{
+               height: 80px;
+               width: 80px;
+               background-color: yellow;
+          }
+          .items1{
+               order: 1;
+          }
+          .items2{
+               order: 4;
+          }
+          .items3{
+               order: 1;
+          }
+     </style>
+</head>
+<body>
+     <div class="container">
+          <div class="items items2">ITEMS 1</div>
+          <div class="items items3">ITEMS 2</div>
+          <div class="items items4">ITEMS 3</div>
+     </div>
+</body>
+</html>

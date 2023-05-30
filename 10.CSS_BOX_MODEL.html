@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>10.CSS_BOX_MODEL</title>
+     <style>
+          /* Box-sizing:value; */
+          .pk1 {
+               padding: 50px;
+               margin: 20px;
+               height: 200px;
+               width: 200px;
+               box-sizing: border-box;
+               background-color: yellow;
+               color: red;
+
+          }
+          .pk2 {
+               padding: 50px;
+               margin: 20px;
+               height: 200px;
+               width: 200px;
+               box-sizing: content-box;
+               background-color: yellow;
+               color: red;
+
+          }
+
+          /* Padding properties */
+
+          * {
+               box-sizing: border-box;
+               margin: 0;
+               padding: 0;
+
+          }
+
+          .pk3 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+
+          }
+
+          .pk4 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding-top: 20px;
+
+          }
+
+          .pk5 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding-right: 20px;
+
+          }
+
+          .pk6 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding-bottom: 20px;
+
+          }
+
+          .pk7 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding-left: 20px;
+
+          }
+
+          .pk8 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 5px 10px 15px 20px;
+
+          }
+
+          .pk9 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 10px 20px;
+
+          }
+          .pk10 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border: 5px solid blue;
+
+          }
+          .pk11 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border: 5px dotted blue;
+
+          }
+          .pk12 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border: 5px dashed blue;
+
+          }
+          .pk13 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-width: 10px;
+               border-style:groove;
+               border-color:blueviolet;
+
+          }
+          .pk14 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-width: 10px;
+               border-style:groove;
+               border-color:blueviolet;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+          }
+          .pk15 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge red;
+               border-bottom: 10px ridge red;
+               border-left: 10px ridge red;
+               border-right: 10px ridge red;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+          }
+          .pk16 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+          }
+
+          /* Border-radius:values--------to curve the corners of an elements. */
+
+          .pk17 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+               border-radius: 20px;
+
+          }
+          .pk18 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+               border-radius: 50%;
+
+          }
+          .pk19 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+               border-top-left-radius: 20px;
+               border-top-right-radius: 40px;
+               border-bottom-right-radius: 20px;
+               border-bottom-left-radius: 40px;
+
+          }
+          .pk20 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+               border-top-left-radius: 180px;
+               border-bottom-right-radius: 180px;
+               
+
+          }
+          .pk21 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+               
+               border-radius: 20px 30px 40px 50px;
+
+          }
+
+          /* Margin:value in px;----To give space outside of the box. */
+          
+          .pk22 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+               border-radius: 50%;
+
+               /* margin: 30px; */
+               margin: 20px 30px 40px 50px;
+          }
+          .pk23 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+               border-radius: 50%;
+               /* container will be placed with equal margin from left and right */
+               margin: auto;
+               
+          }
+
+          /* Box-shadow: offset-x offset-y blur-radius spread radius color; */
+          .pk24 {
+               height: 200px;
+               width: 200px;
+               background-color: red;
+               padding: 20px;
+               border-top: 10px ridge blue;
+               border-bottom: 10px dotted blue;
+               border-left: 10px dashed blue;
+               border-right: 10px solid blue;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+               border-radius: 50%;
+               margin: auto;
+
+               box-shadow: 20px 20px 20px 20px yellowgreen;    
+          }
+          .pk25 {
+               height: 200px;
+               width: 200px;
+               background-color: yellow;
+               padding: 20px;
+               border-top: 10px ridge red;
+               border-bottom: 10px ridge red;
+               border-left: 10px ridge red;
+               border-right: 10px ridge red;
+
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+
+               border-radius: 50%;
+               margin: auto;
+
+               box-shadow: 0px 0px 20px 30px rgba(209, 30, 7, 0.719);    
+          }
+
+          /* Overflow:value; */
+          
+          .pk26{
+               width: 400px;
+               height: 220px;
+               background-color: red;
+               overflow: hidden;
+          }
+          .pk27{
+               width: 400px;
+               height: 220px;
+               background-color: red;
+               overflow: scroll;
+          }
+          .pk28{
+               width: 400px;
+               height: 220px;
+               background-color: red;
+               overflow: visible;
+          }
+          
+
+     </style>
+</head>
+
+<body>
+     <h1>Output of pk1</h1>
+     <div class="pk1">PRADYUMNA</div> <br>
+     <h1>Output of pk2</h1>
+     <div class="pk2">PRADYUMNA</div> <br>
+     <h1>Output of pk3</h1>
+     <div class="pk3">PRADYUMNA</div> <br>
+     <h1>Output of pk4</h1>
+     <div class="pk4">PRADYUMNA</div> <br>
+     <h1>Output of pk5</h1>
+     <div class="pk5">PRADYUMNA</div> <br>
+     <h1>Output of pk6</h1>
+     <div class="pk6">PRADYUMNA</div> <br>
+     <h1>Output of pk7</h1>
+     <div class="pk7">PRADYUMNA</div> <br>
+     <h1>Output of pk8</h1>
+     <div class="pk8">PRADYUMNA</div> <br>
+     <h1>Output of pk9</h1>
+     <div class="pk9">PRADYUMNA</div> <br>
+     <h1>Output of pk10</h1>
+     <div class="pk10">PRADYUMNA</div> <br>
+     <h1>Output of pk11</h1>
+     <div class="pk11">PRADYUMNA</div> <br>
+     <h1>Output of pk12</h1>
+     <div class="pk12">PRADYUMNA</div> <br>
+     <h1>Output of pk13</h1>
+     <div class="pk13">PRADYUMNA</div> <br>
+     <h1>Output of pk14</h1>
+     <div class="pk14">PRADYUMNA</div> <br>
+     <h1>Output of pk15</h1>
+     <div class="pk15">PRADYUMNA</div> <br>
+     <h1>Output of pk16</h1>
+     <div class="pk16">PRADYUMNA</div> <br>
+     <h1>Output of pk17</h1>
+     <div class="pk17">PRADYUMNA</div> <br>
+     <h1>Output of pk18</h1>
+     <div class="pk18">PRADYUMNA</div> <br>
+     <h1>Output of pk19</h1>
+     <div class="pk19">PRADYUMNA</div> <br>
+     <h1>Output of pk20</h1>
+     <div class="pk20">PRADYUMNA</div> <br>
+     <h1>Output of pk21</h1>
+     <div class="pk21">PRADYUMNA</div> <br>
+     <h1>Output of pk22</h1>
+     <div class="pk22">PRADYUMNA</div> <br>
+     <h1>Output of pk23</h1>
+     <div class="pk23">PRADYUMNA</div> <br>
+     <h1>Output of pk24</h1>
+     <div class="pk24">PRADYUMNA</div> <br><br><br>
+     <h1>Output of pk25</h1>
+     <div class="pk25">PRADYUMNA</div> <br>
+     <h1>Output of pk26</h1>
+     <div class="pk26">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ratione fuga, ut recusandae aliquid, voluptatum ipsum eveniet voluptas sint, tempora nobis nisi iste inventore laudantium. Nemo ducimus, possimus veritatis expedita repellendus consectetur in voluptatem exercitationem, quaerat corporis, velit labore fuga excepturi modi maiores tempore ea accusantium provident consequuntur rerum odio? Facere possimus soluta hic doloremque. Non tenetur et id sunt, commodi consectetur tempora voluptate dolore sed, dolorum error facere quaerat quam a laborum praesentium placeat facilis modi reiciendis dolorem quae atque possimus assumenda iste? Autem expedita facere, unde sunt dolores recusandae commodi quibusdam at voluptatum nihil aliquam ratione quae blanditiis ab perferendis ex fuga hic cum? Error velit magnam totam blanditiis pariatur aspernatur enim suscipit, commodi incidunt unde sapiente autem ex nihil nesciunt, voluptatibus beatae nostrum! Dignissimos ex doloribus quidem voluptates libero nobis ad eveniet pariatur odit? Quod ab, enim quia iste magni impedit itaque aspernatur in veniam sequi repudiandae consectetur eveniet. Atque incidunt obcaecati assumenda consectetur vero ex possimus. Officiis maxime perferendis quia reiciendis et corrupti quibusdam numquam blanditiis, deserunt tenetur suscipit sunt temporibus laborum laboriosam facere ab nesciunt porro commodi! Incidunt obcaecati recusandae optio pariatur cupiditate voluptas! Eius dolorem corporis aliquam, non deserunt fugit saepe earum doloremque odit exercitationem repellendus, quas sed suscipit architecto voluptatibus? Hic nobis accusamus porro ipsam aspernatur libero voluptates earum, corporis incidunt aut ipsa eaque commodi vel recusandae natus odit exercitationem non sit perspiciatis repellendus deleniti aliquam quod? Dolorem impedit odit dolore soluta dolor tempora voluptates a cupiditate fuga quas? Magnam, incidunt voluptas. Voluptatibus temporibus numquam, at qui impedit asperiores totam illo mollitia consequatur obcaecati dignissimos corrupti ullam distinctio doloribus modi, ipsum dicta ut error cum facere voluptates non, nemo aliquam. Asperiores, perferendis modi illum eveniet facere fugiat inventore aut atque quaerat incidunt. Voluptate tempore officia sequi ut, optio ducimus! Est quos ut totam.</div> <br>
+     <h1>Output of pk27</h1>
+     <div class="pk27">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ratione fuga, ut recusandae aliquid, voluptatum ipsum eveniet voluptas sint, tempora nobis nisi iste inventore laudantium. Nemo ducimus, possimus veritatis expedita repellendus consectetur in voluptatem exercitationem, quaerat corporis, velit labore fuga excepturi modi maiores tempore ea accusantium provident consequuntur rerum odio? Facere possimus soluta hic doloremque. Non tenetur et id sunt, commodi consectetur tempora voluptate dolore sed, dolorum error facere quaerat quam a laborum praesentium placeat facilis modi reiciendis dolorem quae atque possimus assumenda iste? Autem expedita facere, unde sunt dolores recusandae commodi quibusdam at voluptatum nihil aliquam ratione quae blanditiis ab perferendis ex fuga hic cum? Error velit magnam totam blanditiis pariatur aspernatur enim suscipit, commodi incidunt unde sapiente autem ex nihil nesciunt, voluptatibus beatae nostrum! Dignissimos ex doloribus quidem voluptates libero nobis ad eveniet pariatur odit? Quod ab, enim quia iste magni impedit itaque aspernatur in veniam sequi repudiandae consectetur eveniet. Atque incidunt obcaecati assumenda consectetur vero ex possimus. Officiis maxime perferendis quia reiciendis et corrupti quibusdam numquam blanditiis, deserunt tenetur suscipit sunt temporibus laborum laboriosam facere ab nesciunt porro commodi! Incidunt obcaecati recusandae optio pariatur cupiditate voluptas! Eius dolorem corporis aliquam, non deserunt fugit saepe earum doloremque odit exercitationem repellendus, quas sed suscipit architecto voluptatibus? Hic nobis accusamus porro ipsam aspernatur libero voluptates earum, corporis incidunt aut ipsa eaque commodi vel recusandae natus odit exercitationem non sit perspiciatis repellendus deleniti aliquam quod? Dolorem impedit odit dolore soluta dolor tempora voluptates a cupiditate fuga quas? Magnam, incidunt voluptas. Voluptatibus temporibus numquam, at qui impedit asperiores totam illo mollitia consequatur obcaecati dignissimos corrupti ullam distinctio doloribus modi, ipsum dicta ut error cum facere voluptates non, nemo aliquam. Asperiores, perferendis modi illum eveniet facere fugiat inventore aut atque quaerat incidunt. Voluptate tempore officia sequi ut, optio ducimus! Est quos ut totam.</div> <br>
+     <h1>Output of pk28</h1>
+     <div class="pk28">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ratione fuga, ut recusandae aliquid, voluptatum ipsum eveniet voluptas sint, tempora nobis nisi iste inventore laudantium. Nemo ducimus, possimus veritatis expedita repellendus consectetur in voluptatem exercitationem, quaerat corporis, velit labore fuga excepturi modi maiores tempore ea accusantium provident consequuntur rerum odio? Facere possimus soluta hic doloremque. Non tenetur et id sunt, commodi consectetur tempora voluptate dolore sed, dolorum error facere quaerat quam a laborum praesentium placeat facilis modi reiciendis dolorem quae atque possimus assumenda iste? Autem expedita facere, unde sunt dolores recusandae commodi quibusdam at voluptatum nihil aliquam ratione quae blanditiis ab perferendis ex fuga hic cum? Error velit magnam totam blanditiis pariatur aspernatur enim suscipit, commodi incidunt unde sapiente autem ex nihil nesciunt, voluptatibus beatae nostrum! Dignissimos ex doloribus quidem voluptates libero nobis ad eveniet pariatur odit? Quod ab, enim quia iste magni impedit itaque aspernatur in veniam sequi repudiandae consectetur eveniet. Atque incidunt obcaecati assumenda consectetur vero ex possimus. Officiis maxime perferendis quia reiciendis et corrupti quibusdam numquam blanditiis, deserunt tenetur suscipit sunt temporibus laborum laboriosam facere ab nesciunt porro commodi! Incidunt obcaecati recusandae optio pariatur cupiditate voluptas! Eius dolorem corporis aliquam, non deserunt fugit saepe earum doloremque odit exercitationem repellendus, quas sed suscipit architecto voluptatibus? Hic nobis accusamus porro ipsam aspernatur libero voluptates earum, corporis incidunt aut ipsa eaque commodi vel recusandae natus odit exercitationem non sit perspiciatis repellendus deleniti aliquam quod? Dolorem impedit odit dolore soluta dolor tempora voluptates a cupiditate fuga quas? Magnam, incidunt voluptas. Voluptatibus temporibus numquam, at qui impedit asperiores totam illo mollitia consequatur obcaecati dignissimos corrupti ullam distinctio doloribus modi, ipsum dicta ut error cum facere voluptates non, nemo aliquam. Asperiores, perferendis modi illum eveniet facere fugiat inventore aut atque quaerat incidunt. Voluptate tempore officia sequi ut, optio ducimus! Est quos ut totam.</div> <br>
+    
+</body>
+
+</html>

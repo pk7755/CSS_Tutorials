@@ -1,0 +1,109 @@
+
+          * {
+               box-sizing: border-box;
+               padding: 5px;
+               margin: 0;
+          }
+          body{
+               background-color: rgb(224, 221, 221);
+          }
+          header{
+               font-family: Madefor, Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif;            
+          }
+          .container {
+               height: 50px;
+               background-color: rgb(224, 222, 222);
+               color: black;
+               font-size: 20px;
+               display: flex;
+               justify-content:space-between;
+               padding-bottom: 50px;
+          }
+          .editor{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
+          .navigation{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
+          #e {
+               font-size: 18px;
+               color: grey;
+          }
+          .circle {
+               background-color: #f29c07;
+               height: 15px;
+               width: 15px;
+               border-radius: 50%;
+               display: inline-block;
+          }
+          .customize {
+               background-color: white;
+               height: 40px;
+               width: 150px;
+               font-size: 20px;
+               color: #3166b9;
+               border-top-right-radius: 40px;
+               border-bottom-right-radius: 40px;
+               box-shadow: 0px 0px 3px 5px gray;
+          }
+          .center {
+               display: flex;
+               height: 450px;
+               flex-flow: row nowrap;
+               justify-content: center;
+          }
+          .image {
+               height: 350px;
+               width: 350px;
+               background-image: url(/CSS/Images/pk.jpg);
+               background-repeat: no-repeat;
+               background-position: 0px -31px;
+               background-size: cover;
+               border-radius: 50%;
+          }
+          .hello {
+               height: 200px;
+               width: 400px;
+               display: flex;
+               flex-direction: column;
+               gap: 5px;
+               
+          }
+          .circle4{
+               display: flex;
+               justify-content: space-between;
+               gap: 10px;
+          }
+          .cir {
+               height: 100px;
+               width: 100px;
+               border-radius: 50%;
+               padding: 35px 15px;
+               font-size: 20px;
+               border: 0.5px solid black;
+          }
+          .circle1 {
+               background-color: #efa204;
+          }
+          .circle2 {
+               background-color: #ff3b25;
+          }
+          .circle3 {
+               background-color: #80d8da;
+          }
+          hr {
+               background-color: black;
+               height: 0.1px;
+               padding: 0px;
+          }
+          footer {
+               height: 65px;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+          }
+     

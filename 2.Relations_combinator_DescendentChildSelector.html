@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Relations_combinator_Descendent Child Selector</title>
+     <style>
+          div p,div div{
+               background-color: red;
+          }
+     </style>
+
+</head>
+<body>
+     <div>
+          <p>I am Direct Child</p>
+          <p>I am Direct Child</p>
+          <span>
+               <p>I am Indirect child.</p>
+          </span>
+          <div>I am direct child.</div>
+               <p>I am indirect child.</p>
+                    <p>I am indirect child.</p>
+     </div>
+     <p>I am general sibiling + Immediate sibiling + Nearest Sibiling  + adjacent Sibiling. </p>
+     <p>I am general sibiling </p>
+     <p>I am general sibiling </p>
+     <span></span>
+</body>
+</html>

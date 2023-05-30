@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>33.Flex_1</title>
+     <style>
+          *{
+               box-sizing: border-box;
+               padding: 0;
+               margin: 0;
+          }
+          .container{
+               height: 200px;
+               background-color: red;
+               padding: 20px;
+               display: flex;
+               text-align: center;
+               font-size: 15px;
+               flex-direction: row;
+               /* flex-direction: row-reverse; */
+               /* flex-direction: column; */
+               /* flex-direction: column-reverse; */
+
+               flex-wrap: wrap;
+               /* flex-wrap: nowrap; */
+               /* flex-wrap: wrap-reverse; */
+
+               flex-flow: row wrap;
+               /* flex-flow: flex-direction flex-wrap;  shorthand Property of the flex-direction and flex-wrap  */
+
+               /* justify-content: flex-start; */
+               /* justify-content: flex-end; */
+               /* justify-content: center; */
+               /* justify-content: space-between; */
+               /* justify-content: space-evenly; */
+               justify-content: space-around;
+               
+
+
+               
+          }
+          .child{
+               height: 100px;
+               width: 100px;
+               background-color: yellow;
+               border: 2px;
+               border-style:solid;
+               border-color: blue;
+               
+          }
+     </style>
+</head>
+<body>
+     <div class="container">
+     <div class="child child1">1</div>
+     <div class="child child2">2</div>
+     <div class="child child3">3</div>
+     <div class="child child4">4</div>
+  
+     
+</div>
+</body>
+</html>

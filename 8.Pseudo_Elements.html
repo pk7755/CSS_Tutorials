@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>8.Pseudo_Elements</title>
+</head>
+<style>
+     /* To target the first letter of any container */
+
+     p::first-letter {
+          background-color: yellow;
+          font-size: 40px;
+
+     }
+
+     .para::first-letter {
+          background-color: red;
+          font-size: 40px;
+     }
+
+     /* To target the first line of a container */
+
+     p::first-line {
+          background-color: yellow;
+          color: green;
+
+     }
+
+     .para::first-line {
+          background-color: red;
+          color: white;
+
+     }
+
+     /* To target the selected the content */
+
+     p::selection {
+          background-color: orange;
+          color: white;
+          font-size: 50px;
+     }
+
+
+
+     /* To target bullets of unordered or ordered list */
+     /* ul li::marker{
+          content:"*";
+     } */
+     ul li::marker {
+          content: "🤩";
+     }
+
+     ol li::marker {
+          content: "👌";
+     }
+     /*:: marker  will not work on discription list directly. */
+     dl dt dd::marker {
+          content: "*";
+     }
+
+
+
+     /* To create an element before some element by using befor pseudo element  */
+     /* Before pseudo element is used to create pseudo element before container's content. */
+     /* display : inline is used for  inline content
+     display : block is used for block level content. */
+
+     .container::before{
+          content:"I am before inline....";
+          display: inline;
+          background-color: red;
+
+     }
+     .pk::before{
+          content:"I am before block....";
+          display: block;
+          background-color: red;
+
+     }
+     /* To create an element after some element by using befor pseudo element  */
+     /* After pseudo element is used to create pseudo element After container's content. */
+     /* display : inline is used for  inline content
+     display : block is used for block level content. */
+
+     .container::after{
+          content:"I am after inline....";
+          display: inline;
+          background-color: red;
+
+     }
+     .pk::after{
+          content:"I am after block....";
+          display: block;
+          background-color: red;
+
+     }
+
+
+</style>
+
+<body>
+     <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil, laudantium laboriosam ipsam
+          reiciendis odit iure maxime ab dolore. Odio magnam quaerat, molestias excepturi ad necessitatibus vero
+          incidunt ipsam doloremque enim expedita natus iure officiis aperiam, ut eos, sint cupiditate neque accusantium
+          inventore doloribus veniam. Obcaecati ea, iusto culpa autem aut possimus adipisci libero repudiandae vero
+          ipsam. Perspiciatis provident eligendi sunt quod quaerat impedit tenetur explicabo, repellat, quisquam placeat
+          nulla distinctio voluptatibus! Harum veritatis repellat quos doloribus sapiente praesentium maiores est
+          commodi cum amet tempora magnam obcaecati doloremque asperiores nobis possimus natus, incidunt sint quo
+          cupiditate quas quam! Eveniet, ratione!
+     </p>
+     <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil, laudantium laboriosam ipsam
+          reiciendis odit iure maxime ab dolore. Odio magnam quaerat, molestias excepturi ad necessitatibus vero
+          incidunt ipsam doloremque enim expedita natus iure officiis aperiam, ut eos, sint cupiditate neque accusantium
+          inventore doloribus veniam. Obcaecati ea, iusto culpa autem aut possimus adipisci libero repudiandae vero
+          ipsam. Perspiciatis provident eligendi sunt quod quaerat impedit tenetur explicabo, repellat, quisquam placeat
+          nulla distinctio voluptatibus! Harum veritatis repellat quos doloribus sapiente praesentium maiores est
+          commodi cum amet tempora magnam obcaecati doloremque asperiores nobis possimus natus, incidunt sint quo
+          cupiditate quas quam! Eveniet, ratione!
+     </p>
+     <ul>
+          <h1>Food List</h1>
+          <li>Pizza</li>
+          <li>Burger</li>
+          <li>Samose</li>
+          <li>Mango</li>
+          <li>Banana</li>
+          <li>Pani puri</li>
+     </ul>
+     <ol type="a">
+          <h1>Food List</h1>
+          <li>Pizza</li>
+          <li>Burger</li>
+          <li>Samose</li>
+          <li>Mango</li>
+          <li>Banana</li>
+          <li>Pani puri</li>
+     </ol>
+     <div>
+          <dl>
+               <dt>Pradyumna
+               <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, distinctio?</dd>
+               </dt>
+               <dt>kumar
+               <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, neque?</dd>
+               </dt>
+          </dl>
+     </div>
+     <div class="container">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus, id nam suscipit nemo esse porro! Ad qui doloremque reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eligendi expedita quam, repellendus obcaecati fugiat rem eos incidunt nesciunt, beatae quos accusamus sit cupiditate tempore corporis. Voluptates aspernatur quisquam minima obcaecati quas facere animi reiciendis, sequi rem. Magnam, sapiente voluptatum!
+     </div><br><br>
+     <div class="pk">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus, id nam suscipit nemo esse porro! Ad qui doloremque reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eligendi expedita quam, repellendus obcaecati fugiat rem eos incidunt nesciunt, beatae quos accusamus sit cupiditate tempore corporis. Voluptates aspernatur quisquam minima obcaecati quas facere animi reiciendis, sequi rem. Magnam, sapiente voluptatum!
+     </div>
+
+
+
+</body>
+
+</html>

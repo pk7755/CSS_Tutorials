@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pseude Class Selector</title>
+     <style>
+          /* the sequence of the pseudo class selector is must be in that way.
+          if you are changing the sequence of the pseude class selector it will work in some condition but not in all conditions. */
+          a:link{
+               color: red;
+          }
+          a:active{
+               color: yellow;
+          }
+          a:visited{
+               color: green;
+          }
+          /* To target the hover state of an element. */
+          P:hover{
+               background-color: green;
+               color:white;
+               font-size: 15px;
+          }
+          a:hover{
+               background-color: orange;
+               color: green;
+               font-size: 15px;
+          }
+          /* we can also use the class and id to target its hover state. */
+          #ram:hover{
+               background-color: red;
+               color: green;
+               font-size: 15px;
+          }
+          .pk:hover{
+               background-color: rgb(18, 204, 73);
+               color: green;
+               font-size: 15px;
+          }
+          /* To target childs by using Pseudo classes */
+          
+
+          div :first-child{
+               background-color: red;
+          }
+          div :last-child{
+               background-color:green;
+          }
+          div :nth-child(6){
+               background-color:black;
+               color: white;
+          }
+          div :nth-child(even){
+               background-color:red;
+               color: white;
+          }
+          div :nth-child(odd){
+               background-color:yellow;
+               color:black;
+          }
+
+          
+          
+     </style>
+   
+</head>
+<body>
+     <a id="ram" href="http://www.google.com" target="_blank">Google</a> is a search engine. <br>
+     <a class="pk" href="http://www.amazon.in" target="_blank">Amazon</a> is a shopping website. <br>
+     <a class="pk" href="/CSS/01.CSS_SELECTOR.HTML" target="_blank">xyz</a> is a code. <br>
+     <a href="http://www.amazon.in" target="_blank">Amazon</a> is a shopping website. <br>
+     <a href="/CSS/01.CSS_SELECTOR.HTML" target="_blank">xyz</a> is a code. <br>
+     <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magnam itaque nulla molestias exercitationem eos aliquid debitis rem labore, ipsam nam nostrum, sequi voluptates, magni possimus consequuntur dolorem quo. Suscipit quibusdam doloribus, ad tenetur nisi eveniet exercitationem voluptatibus provident earum, cupiditate optio debitis! Eum saepe repellat modi obcaecati velit magni nam expedita doloremque sequi accusamus, illo voluptatum. Corporis modi nostrum veniam. Mollitia tempora, accusantium placeat voluptatum id quam sapiente nihil reiciendis ex adipisci, fugiat quaerat, culpa commodi dolorum. Deserunt maxime voluptate omnis! Autem aperiam aliquam magni quis voluptates minima totam, sequi cum qui animi, commodi nihil quia reiciendis facilis sapiente!
+     </p>
+     <div>
+          <p>1st child .</p>
+          <span>2nd child.</span>
+          <p>3th child.</p>
+          <p>4th child.</p>
+          <span>5th child.</span>
+          <p>6th child.</p>
+          <p>7th child.</p>
+          <sapn>8th child.</sapn>
+          <p>9th child.</p>
+     </div>
+</body>
+</html>

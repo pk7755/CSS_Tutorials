@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>9.2.Background_properties</title>
+     <style>
+          .dk {
+               color: rgb(73, 5, 5);
+               background-color: green;
+
+          }
+          .dk2{
+               color:blue;
+               background-color:cadetblue;
+          }
+
+          /* 1. */
+          .pk1 {
+               height: 400px;
+               background-color: rgba(255, 0, 0, 0.6);
+
+          }
+
+          /* 2. */
+          .pk2 {
+               height: 400px;
+               background-image: url("/CSS/Images/Thanos.jpg");
+          }
+
+          /* 3. */
+          /* Linear gradient */
+          /* background-image: linear-gradient(direction (optional),c1,c2,c3); */
+          /* background-image: linear-gradient(to bottom, blue,aqua); To bottom is default */
+
+          .pk3 {
+               height: 400px;
+               background-image: linear-gradient(aqua, pink, green, purple, red);
+          }
+
+          .pk4 {
+               height: 400px;
+               background-image: linear-gradient(to top, blue, aqua, green, purple, pink, red);
+          }
+
+          .pk5 {
+               height: 400px;
+               background-image: linear-gradient(to right, blue, aqua, red, green);
+          }
+
+          .pk6 {
+               height: 400px;
+               background-image: linear-gradient(to left, blue, aqua, red, green);
+          }
+
+          /* 4. */
+          /* Radial gradient  */
+
+          .pk7 {
+               height: 400px;
+               background-image: radial-gradient(aqua, pink, green, purple, red);
+          }
+
+          .pk8 {
+               height: 400px;
+               background-image: radial-gradient(circle at 30%, aqua, pink, green, purple, red);
+          }
+
+          .pk9 {
+               height: 400px;
+               background-image: radial-gradient(200px 100px, aqua, pink, green, purple);
+          }
+
+
+          /* 5. */
+          /* backgroud repeat is used to control the repeatation of the image. */
+
+          .pk10 {
+               height: 400px;
+               background-color: #f00;
+               background-image: url("/CSS/Images/Thanos.jpg");
+               background-repeat: repeat;
+          }
+
+          .pk11 {
+               height: 400px;
+               background-color: #f00;
+               background-image: url("/CSS/Images/Thanos.jpg");
+               background-repeat: repeat-x;
+          }
+
+          .pk12 {
+               height: 400px;
+               background-color: #f00;
+               background-image: url("/CSS/Images/Thanos.jpg");
+               background-repeat: repeat-y;
+          }
+
+          .pk13 {
+               height: 400px;
+               background-color: #f00;
+               background-image: url("/CSS/Images/Thanos.jpg");
+               background-repeat: no-repeat;
+          }
+
+          /* -----------Round-------- */
+          /* It will squeeze and stretch the background image according to the availble space of the container. */
+          .pk14 {
+               height: 500px;
+               width: 750px;
+               background-color: #f00;
+               background-image: url("/CSS/Images/Thanos.jpg");
+               background-repeat: round;
+          }
+
+          /* ---------Space------------ */
+          /* It will display image with original dimension. */
+          /* It will first place background image on corner. */
+          .pk15 {
+               height: 550px;
+               width: 950px;
+               background-color: #f00;
+               background-image: url("/CSS/Images/Thanos.jpg");
+               background-repeat: space;
+          }
+
+          /* 6. */
+          /* Background-size :value; ------to control the size of background image */
+
+          .pk16 {
+               background-color: red;
+               height: 300px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: 300px;
+          }
+
+          /*------- Cover------*/
+          /* It will cover the complete the container  */
+          /* But the complete image is not visible that means some portion of the image will crop automatically.  */
+
+          .pk17 {
+               background-color: red;
+               height: 300px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+          }
+
+          /*------- Contain------*/
+          /* It will display the image with maximum height and width.  */
+          /* Image will be perfectly vissible.  */
+          /* but the image  will not cover the complete container size. */
+
+          .pk18 {
+               background-color: red;
+               height: 300px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: contain;
+          }
+
+          /* 7... */
+          /* Background position :value;------------it will control the position of background image.  */
+          /* which axis px is not mention then it will take center as default. */
+
+          .pk19 {
+               background-color: red;
+               height: 500px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: 200px;
+          }
+
+          .pk20 {
+               background-color: red;
+               height: 500px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: center;
+          }
+
+          .pk21 {
+               background-color: red;
+               height: 500px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: 200px, 300px;
+          }
+
+          .pk22 {
+               background-color: red;
+               height: 500px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: top left;
+          }
+
+          .pk23 {
+               background-color: red;
+               height: 500px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: top right;
+          }
+
+          .pk23 {
+               background-color: red;
+               height: 500px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: bottom left;
+          }
+
+          .pk24 {
+               background-color: red;
+               height: 500px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: bottom right;
+          }
+
+          .pk24 {
+               background-color: red;
+               height: 900px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: 3px, -22px;
+          }
+
+          .pk25 {
+               background-color: red;
+               height: 900px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+          }
+
+          .pk26 {
+               background-color: red;
+               height: 300px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: top center;
+          }
+
+          .pk27 {
+               background-color: red;
+               height: 300px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: bottom center;
+          }
+
+          .pk28 {
+               background-color: red;
+               height: 300px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: left center;
+          }
+
+          .pk29 {
+               background-color: red;
+               height: 300px;
+               background-image: url(/CSS/Images/Thanos.jpg);
+               background-repeat: no-repeat;
+               background-position: right center;
+          }
+     </style>
+
+</head>
+
+<body>
+     <div>
+
+          <h1 class="dk">/* 1. */</h1>
+          <h2 class="dk2">This is output for class pk 1 : </h2>
+          <div class="pk1">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h1 class="dk">/* 2. */ </h1>
+          <h2 class="dk2">This is output for class pk 2 : </h2>
+          <div class="pk2">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h1 class="dk">/* 3. */ <br>
+               /* Linear gradient */ <br>
+               /* background-image: linear-gradient(direction (optional),c1,c2,c3); */ <br>
+               /* background-image: linear-gradient(to bottom, blue,aqua); To bottom is default */ <br></h1>
+          <h2 class="dk2">This is output for class pk 3 : </h2>
+               <div class="pk3">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 4 : </h2>
+          <div class="pk4">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 5 : </h2>
+          <div class="pk5">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 6 : </h2>
+          <div class="pk6">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h1 class="dk">
+               /* 4. */ <br>
+               /* Radial gradient */ <br>
+          </h1>
+          <h2 class="dk2">This is output for class pk 7 : </h2>
+          <div class="pk7">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 8 : </h2>
+          <div class="pk8">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 9 : </h2>
+          <div class="pk9">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h1 class="dk">
+               /* 5. */ <br>
+               /* backgroud repeat is used to control the repeatation of the image. */ <br>
+
+          </h1>
+          <h2 class="dk2">This is output for class pk 10 : </h2>
+          <div class="pk10">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 11 : </h2>
+          <div class="pk11">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 12 : </h2>
+          <div class="pk12">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor, sit
+               amet consectetur adipisicing elit. Vel adipisci, debitis repellat vitae a quae, repellendus animi iure
+               ducimus minus rem facere explicabo ut quod in, nemo aliquid. Placeat, facilis consequuntur, praesentium
+               odio repudiandae error ullam asperiores debitis, sint explicabo fuga quis impedit expedita nam natus
+               ipsam ratione. Incidunt saepe minus rem consectetur tempore? Et asperiores ea cum. Cum aliquam explicabo
+               et velit, pariatur sit voluptatem assumenda ab fuga sequi architecto ex nobis dignissimos minus
+               praesentium optio molestias ratione facilis! Maxime dignissimos possimus, et omnis ab, distinctio rerum
+               officiis repellendus consequatur aspernatur libero eos asperiores totam ipsam optio ipsum repellat.
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 13 : </h2>
+          <div class="pk13">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h1 class="dk">
+               /* -----------Round-------- */ <br>
+               /* It will squeeze and stretch the background image according to the availble space of the container. */
+               <br>
+          </h1>
+          <h2 class="dk2">This is output for class pk 14 : </h2>
+          <div class="pk14">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h1 class="dk">
+               /* ---------Space------------ */ <br>
+               /* It will display image with original dimension. */ <br>
+               /* It will first place background image on corner. */ <br>
+          </h1>
+          <h2 class="dk2">This is output for class pk 15 : </h2>
+          <div class="pk15">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h1 class="dk">
+               /* 6. */ <br>
+               /* Background-size :value; ------to control the size of background image */ <br>
+          </h1>
+          <h2 class="dk2">This is output for class pk 16 : </h2>
+          <div class="pk16">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h1 class="dk">
+               /*------- Cover------*/ <br>
+               /* It will cover the complete the container */ <br>
+               /* But the complete image is not visible that means some portion of the image will crop automatically. */
+               <br>
+          </h1>
+          <h2 class="dk2">This is output for class pk 17 : </h2>
+          <div class="pk17">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h1 class="dk">
+               /*------- Contain------*/ <br>
+               /* It will display the image with maximum height and width. */ <br>
+               /* Image will be perfectly vissible. */ <br>
+               /* but the image will not cover the complete container size. */ <br>
+          </h1>
+          <h2 class="dk2">This is output for class pk 18 : </h2>
+          <div class="pk18">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h1 class="dk">
+               /* 7... */ <br>
+               /* Background position :value;------------it will control the position of background image. */ <br>
+               /* which axis px is not mention then it will take center as default. */ <br>
+          </h1>
+          <h2 class="dk2">This is output for class pk 19 : </h2>
+          <div class="pk19">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 20 : </h2>
+          <div class="pk20">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 21 : </h2>
+          <div class="pk21">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 22 : </h2>
+          <div class="pk22">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 23 : </h2>
+          <div class="pk23">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 24 : </h2>
+          <div class="pk24">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 25 : </h2>
+          <div class="pk25">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 26 : </h2>
+          <div class="pk26">
+               Lorem ipsum dolor sit amet consectetur adpisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 27 : </h2>
+          <div class="pk27">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt povident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 28 : </h2>
+          <div class="pk28">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 29 : </h2>
+          <div class="pk29">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 30 : </h2>
+          <div class="pk30">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+          <h2 class="dk2">This is output for class pk 31 : </h2>
+          <div class="pk31">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti. Lorem ipsum dolor sit amet
+               consectetur, adipisicing elit. Deserunt provident debitis perferendis nulla, doloremque sed neque
+               praesentium magni accusantium architecto eaque dolor dolorem modi eum tenetur nobis nisi est cumque
+               cupiditate non odit reprehenderit nihil! Hic velit nam ipsam nesciunt voluptas eveniet dolores.
+               Consectetur minus, placeat quod aliquid quia architecto obcaecati sunt eaque consequatur nobis neque qui,
+               iure facilis nam ducimus incidunt at nihil, voluptates quo necessitatibus laboriosam dolores ab! Cumque
+               repudiandae voluptatem illum officiis! Obcaecati nulla tempora itaque voluptatibus ex, molestiae et modi
+               suscipit natus eligendi harum error eius doloribus velit accusantium! Architecto, a similique nesciunt
+               facilis magni nihil?
+          </div><br><br>
+
+     </div>
+</body>
+
+</html>
